@@ -1,0 +1,128 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="icon" href="{{ url_for('static', filename = 'email_black_48x48.png') }}">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+<title>Erin Turner</title>
+</head>
+<body style="background-color: #efe5e1; font-family: 'Roboto Slab';">
+<div class="container mt-5 mb-5" id="content">
+	<div class="row">
+		<div class="col-md-8 offset-md-2 text-center">
+		<div class="display-3">Erin Turner</div>
+			<p class="p-3">Life-long learner. Self-taught coder.<br>Always searching for the next challenge.<p>
+			<img class="img-fluid" src="/Users/erinturner/Desktop/code/headshot.jpg">
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-md-6 offset-md-3 pt-5">
+			<h2><i class="material-icons">build</i>&nbsp;Recent Projects</h2>
+			<hr>
+			<div id="accordion">
+				<div class="card mb-1">
+					<div class="card-header" id="headingOne">
+						<h5 class="mb-0">
+							<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+								Internal Tool Web App
+							</button>
+						</h5>
+					</div>
+					<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+						<div class="card-body">
+							Built a web application to host internal tools for my team and the teams we partner with. The site is set up so that scripts used by individuals can be turned into shared tools with an easy interface. 
+							<br><br>
+							<em>Python, MySQL, Flask, Jinja2, Bootstrap</em>
+						</div>
+					</div>
+				</div>
+				<div class="card mb-1">
+					<div class="card-header" id="headingTwo">
+						<h5 class="mb-0">
+							<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								Email Preview Tool
+							</button>
+						</h5>
+					</div>
+					<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+						<div class="card-body">
+							Designed a tool to allow designers to see how their assets would look in live email HTML while working. Allows for easy iteration before designs are passed to the email team for execution. Persistent URL with information about the design eliminates the need for an additional spec sheet.<br><br>
+							<em>Python, HTML/CSS, web forms</em>
+						</div>
+					</div>
+				</div>
+				<div class="card mb-1">
+					<div class="card-header" id="headingThree">
+						<h5 class="mb-0">
+							<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								Translation Reformatter
+							</button>
+						</h5>
+					</div>
+					<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+						<div class="card-body">
+							Wrote a script to transform a Google Sheet filled with translations for many mediums into a CSV with only email copy. Each string is automatically assigned a unique identifier, warnings are shown for a variety of edge cases, and personalization placeholders are replaced with ESP logic.<br><br>
+							<em>Python</em>
+						</div>
+					</div>
+				</div>
+				<div class="card mb-1">
+					<div class="card-header" id="headingFour">
+						<h5 class="mb-0">
+							<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+								Localization at Scale
+							</button>
+						</h5>
+					</div>
+					<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+						<div class="card-body">
+							Designed the infrastructure and processes that allow my team to easily send emails in 10 languages. Emphasis on scalable infra and building for localization first. Spoke at Litmus Live 2017 about this system.<br><br>
+							<em>ESP built-in functions</em>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-6 offset-md-3 pt-5">
+			<h2><i class="material-icons" style="font-size: 25px;">person</i>&nbsp;Background</h2>
+			<hr>
+			<p>Non-Profit &#8594; EdTech &#8594; Email Dev &#8594; Internal Tools &#8594; ???<br><br>
+			Over the past few years I've taught myself:
+			<ul>
+			<li>Python</li>
+			<li>Flask Microframworks</li>
+			<li>Jinja2 Templating</li>
+			<li>SQL (Postgress &amp; MySQL)</li>
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>Google Scripts</li>
+			</ul>
+			...and dabbled in other languages.<br><br>
+			Right now I code emails, scale the infrastructure behind them, and build internal tools for the marketing team.
+			</p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-6 offset-md-3 pt-5">
+			<h2><i class="material-icons">phone</i>&nbsp;Contact</h2>
+			<hr>
+			<p>Want to learn more about my past work or talk about future opportunities? You can find me on Github and Linkedin. <br><br>
+				<a href="https://www.linkedin.com/in/turnererin1/" target="blank" style="text-decoration:none;"><img class="img-fluid pr-4" src="/Users/erinturner/Desktop/code/github.svg"></a>
+				<a href="https://www.linkedin.com/in/turnererin1/" target="blank" style="text-decoration:none;"><img class="img-fluid pr-4" src="/Users/erinturner/Desktop/code/linkedin.svg"></a>
+			</p>
+		</div>
+	</div>
+
+
+</div>
+
+</body>
+</html>
